@@ -5,9 +5,9 @@
   "version": "0.0.0",
   "description": "MCP server for Xero Accounting - access contacts, invoices, payments, accounts, and reports through AI assistants",
   "long_description": "Provides AI assistants with structured access to your Xero accounting data. Manage contacts, invoices, payments, accounts, and financial reports through the Model Context Protocol.",
-  "author": { "name": "Wyre Technology", "url": "https://github.com/wyre-technology" },
-  "repository": { "type": "git", "url": "https://github.com/wyre-technology/xero-mcp" },
-  "homepage": "https://github.com/wyre-technology/xero-mcp",
+  "author": { "name": "Wyre Technology", "url": "https://github.com/WYRE-AI" },
+  "repository": { "type": "git", "url": "https://github.com/WYRE-AI/xero-mcp" },
+  "homepage": "https://github.com/WYRE-AI/xero-mcp",
   "license": "Apache-2.0",
   "keywords": ["xero", "accounting", "msp", "invoices", "contacts", "payments"],
   "server": {
