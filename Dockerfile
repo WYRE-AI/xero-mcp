@@ -14,7 +14,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Configure npm to authenticate with GitHub Packages
-RUN echo "@wyre-technology:registry=https://npm.pkg.github.com" >> .npmrc && \
+RUN echo "@wyre-ai:registry=https://npm.pkg.github.com" >> .npmrc && \
     echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" >> .npmrc
 
 # Install dependencies (--ignore-scripts prevents 'prepare' from running before source is copied)
@@ -87,9 +87,9 @@ LABEL org.opencontainers.image.description="Model Context Protocol server for Xe
 LABEL org.opencontainers.image.version="${VERSION}"
 LABEL org.opencontainers.image.created="${BUILD_DATE}"
 LABEL org.opencontainers.image.revision="${COMMIT_SHA}"
-LABEL org.opencontainers.image.source="https://github.com/wyre-technology/xero-mcp"
-LABEL org.opencontainers.image.documentation="https://github.com/wyre-technology/xero-mcp/blob/main/README.md"
-LABEL org.opencontainers.image.url="https://github.com/wyre-technology/xero-mcp/pkgs/container/xero-mcp"
+LABEL org.opencontainers.image.source="https://github.com/WYRE-AI/xero-mcp"
+LABEL org.opencontainers.image.documentation="https://github.com/WYRE-AI/xero-mcp/blob/main/README.md"
+LABEL org.opencontainers.image.url="https://github.com/WYRE-AI/xero-mcp/pkgs/container/xero-mcp"
 LABEL org.opencontainers.image.vendor="Wyre Technology"
 LABEL org.opencontainers.image.licenses="Apache-2.0"
-LABEL io.modelcontextprotocol.server.name="io.github.wyre-technology/xero-mcp"
+LABEL io.modelcontextprotocol.server.name="io.github.WYRE-AI/xero-mcp"

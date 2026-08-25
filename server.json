@@ -1,18 +1,18 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.wyre-technology/xero-mcp",
+  "name": "io.github.WYRE-AI/xero-mcp",
   "title": "Xero",
   "description": "MCP server for Xero accounting \u2014 contacts, invoices, payments, accounts, and financial reports.",
   "repository": {
-    "url": "https://github.com/wyre-technology/xero-mcp",
+    "url": "https://github.com/WYRE-AI/xero-mcp",
     "source": "github"
   },
   "version": "0.0.0",
-  "websiteUrl": "https://github.com/wyre-technology/xero-mcp",
+  "websiteUrl": "https://github.com/WYRE-AI/xero-mcp",
   "packages": [
     {
       "registryType": "oci",
-      "identifier": "ghcr.io/wyre-technology/xero-mcp:0.0.0",
+      "identifier": "ghcr.io/wyre-ai/xero-mcp:0.0.0",
       "transport": {
         "type": "stdio"
       },
