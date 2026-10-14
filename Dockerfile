@@ -57,7 +57,10 @@ EXPOSE 8080
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
   CMD wget --no-verbose --tries=1 --spider http://localhost:8080/health || exit 1
 
-# Set environment variables
+# Set environment variables.
+# 0.0.0.0 is safe inside the container only because startup refuses to listen
+# unless CONDUIT_S2S_SECRET is a real secret. MCP_ALLOW_INSECURE_DEV=1 forces
+# 127.0.0.1 and does not honor this host. Compose publishes the port on loopback.
 ENV NODE_ENV=production
 ENV LOG_LEVEL=info
 ENV LOG_FORMAT=json
